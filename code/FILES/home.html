@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="43200">
+  <title>SAR - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div>EMAIL: customercare@sar.com.sa | TEL: 8001262000</div>
+    <div>
+      <a href="https://x.com/SARSaudiRailway" target="_blank">X</a>
+      <a href="https://instagram.com/SARSaudiRailway" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logos">
+      <img src="ccis.png" alt="CCIS">
+      <img src="imsiu.png" alt="IMSIU">
+    </div>
+    <div class="site-title">Saudi Arabia Railways (SAR)<br><small>الخطوط الحديدية السعودية</small></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html" class="active">Home</a>
+      </li>
+      <li><a href="travel.html">Travel with SAR</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create_account.html">Create Account</a></li>
+      <li><a href="sign.html">Sign In</a></li>
+      <li><a href="booking_choice.html">Book a Ticket</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <br><br>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to SAR</h1>
+    <p>Saudi Arabia Railways (الخطوط الحديدية السعودية) is the national railway operator of the Kingdom of Saudi Arabia,
+      connecting major cities with modern, fast, and comfortable trains.</p>
+    <p>Our mission is to provide safe, efficient, and eco-friendly transportation across the Kingdom, linking Riyadh,
+      Makkah, Madinah, Dammam, Jeddah and more.</p>
+    <p>Use the menu above to explore destinations, view our gallery, create an account, or book your next trip with us.</p>
+    <img src="home.png" alt="SAR Train" style="width:50%; max-width:600px; display:block; margin:20px auto;">
+  </div>
+
+  <footer>© 2nd-2025-26 / IMSIU / CCIS ™</footer>
+
+  <div class="container2"><h1 style="color: aliceblue;">Meet the Developers<br><br></h1>
+    <div class="slideshow-container">  
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="Dev.png" style="width:10%">
+        <div class="text"><h3>Abdullah Alsadoun</h3>
+          <h5>a senior student at IMSIU's College of Computer and Information Sciences.
+            <br>Interested in web development, and data science.<br>
+            Degree: BSc in Information Systems, expected graduation 2026.</h5>
+
+          </h5>
+
+        </div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="Dev.png" style="width:10%">
+        <div class="text"><h3>Faisal Alalola</h3>
+          <h5>a senior student at IMSIU's College of Computer and Information Sciences.
+            <br>Interested in High-performance automotive engineering.<br>
+            Degree: BSc in Information Systems, expected graduation 2026.</h5>
+          </h5></div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Dev.png" style="width:10%">
+        <div class="text"><h3>Bader Althunayyan</h3>
+          <h5>a senior student at IMSIU's College of Computer and Information Sciences.
+            <br>Interested in Business Analysis.<br>
+            Degree: BSc in Information Systems, expected graduation 2026.</h5>
+          </h5></div>
+      </div>
+    
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+
+</html>

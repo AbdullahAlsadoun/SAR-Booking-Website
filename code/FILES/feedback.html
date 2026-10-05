@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAR - Submit Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="top-bar">
+    <div>EMAIL: customercare@sar.com.sa | TEL: 8001262000</div>
+    <div>
+      <a href="https://x.com/SARSaudiRailway" target="_blank">X</a>
+      <a href="https://instagram.com/SARSaudiRailway" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logos">
+      <img src="ccis.png" alt="CCIS">
+      <img src="imsiu.png" alt="IMSIU">
+    </div>
+    <div class="site-title">Saudi Arabia Railways (SAR)<br><small>الخطوط الحديدية السعودية</small></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html" class="active">Home</a>
+      </li>
+      <li><a href="travel.html">Travel with SAR</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create_account.html">Create Account</a></li>
+      <li><a href="sign.html">Sign In</a></li>
+      <li><a href="booking_choice.html">Book a Ticket</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <br><br>
+  </nav>
+
+  <div class="container">
+    <h1>Share Your Feedback</h1>
+    <form action="feedback_process.php" method="post">
+      
+      <label>Your Name</label>
+      <input type="text" name="user_name" required>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Your Message</label>
+      <textarea name="message" rows="6" style="width: 100%; padding: 10px; font-size: 16px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;" required></textarea>
+      <br><br>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+  <footer>© 2nd-2025-26 / IMSIU / CCIS ™</footer>
+</body>
+</html>

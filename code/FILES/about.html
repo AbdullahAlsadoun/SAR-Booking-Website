@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Vision 2030</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div>EMAIL: customercare@sar.com.sa | TEL: 8001262000</div>
+    <div>
+      <a href="https://x.com/SARSaudiRailway" target="_blank">X</a>
+      <a href="https://instagram.com/SARSaudiRailway" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logos">
+      <img src="ccis.png" alt="CCIS">
+      <img src="imsiu.png" alt="IMSIU">
+    </div>
+    <div class="site-title">Saudi Arabia Railways (SAR)<br><small>الخطوط الحديدية السعودية</small></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html" class="active">Home</a>
+      </li>
+      <li><a href="travel.html">Travel with SAR</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create_account.html">Create Account</a></li>
+      <li><a href="sign.html">Sign In</a></li>
+      <li><a href="booking_choice.html">Book a Ticket</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <br><br>
+  </nav>
+
+
+  <main class="page-content">
+    <div class="container2">
+      <h1 style="color: #ffffff;">About Us & Profile</h1>
+
+      <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <div style="padding: 40px 20px; text-align: center;">
+            <h2 style="color: #e7e5e5; font-size: 1.8rem; margin-bottom: 1rem;">Welcome to Saudi Arabia Railways (SAR)</h2>
+            <p style="color: #cbd7ea; font-size: 1.05rem; line-height: 1.8; margin: 0;">SAR is a strategic initiative designed to transform transportation, culture, and quality of life through innovation and sustainable development. We are committed to building a brighter future for all by connecting our communities and driving regional growth.</p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <div style="padding: 40px 20px; text-align: center;">
+            <h2 style="color: #ffffff; font-size: 1.8rem; margin-bottom: 1rem;">Our Mission</h2>
+            <p style="color: #cbd7ea; font-size: 1.05rem; line-height: 1.8; margin: 0;">To promote sustainable transportation growth while preserving cultural heritage and enhancing the quality of life for all citizens through smart solutions and digital innovation.</p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <div style="padding: 40px 20px; text-align: center;">
+            <h2 style="color: #ffffff; font-size: 1.8rem; margin-bottom: 1rem;">Our Vision</h2>
+            <p style="color: #cbd7ea; font-size: 1.05rem; line-height: 1.8; margin: 0;">By 2030, we envision a world where transportation drives economic growth, where cultural traditions are celebrated, and where technology enhances every aspect of human experience.</p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <div style="padding: 40px 20px; text-align: center;">
+            <h2 style="color: #ffffff; font-size: 1.8rem; margin-bottom: 1rem;">Core Values</h2>
+            <p style="color: #cbd7ea; font-size: 1.05rem; line-height: 1.8; margin: 0;"><strong>Innovation</strong> • <strong>Sustainability</strong> • <strong>Inclusivity</strong> • <strong>Excellence</strong> • <strong>Collaboration</strong></p>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <div style="padding: 40px 20px; text-align: center;">
+            <h2 style="color: #ffffff; font-size: 1.8rem; margin-bottom: 1rem;">Five Strategic Goals</h2>
+            <p style="color: #ffffff; font-size: 1.05rem; line-height: 1.8; margin: 0;">Transportation Growth | Culture & Heritage | Quality of Life | Smart Destinations | Digital Transformation</p>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <br>
+
+      <div style="text-align:center; margin-bottom: 20px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+  </main>
+
+  
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      
+      if (n > slides.length) { slideIndex = 1 }    
+      if (n < 1) { slideIndex = slides.length }
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+  </script>
+
+  <footer>© 2nd-2025-26 / IMSIU / CCIS ™</footer>
+</main>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAR - AI Voice Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logos">
+      <img src="ccis.png" alt="CCIS">
+      <img src="imsiu.png" alt="IMSIU">
+    </div>
+    <div class="site-title">Saudi Arabia Railways (SAR)<br><small>الخطوط الحديدية السعودية</small></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html" class="active">Home</a>
+      </li>
+      <li><a href="travel.html">Travel with SAR</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create_account.html">Create Account</a></li>
+      <li><a href="sign.html">Sign In</a></li>
+      <li><a href="booking_choice.html">Book a Ticket</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <br><br>
+  </nav>
+
+  <header class="header">
+    <div class="site-title">Saudi Arabia Railways (SAR)</div>
+  </header>
+
+  <div class="container" style="max-width: 650px;">
+    <a href="booking_choice.html" style="color: #00796b; text-decoration: none; font-weight: bold;">← Go Back</a>
+    
+    <h1 style="color: #00796b; text-align: center; margin-top: 15px;">Smart AI Voice Assistant</h1>
+    <p style="text-align: center; color: #555;">Click the microphone and say your request naturally.<br><i>Example: "Book a trip from Riyadh to Makkah tomorrow"</i></p>
+    
+    <div style="text-align: center; background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 30px; border-radius: 12px; margin: 25px 0;">
+      <button type="button" id="voiceBtn" style="width: 100px; height: 100px; font-size: 40px; background-color: #0284c7; color: white; border: none; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);">🎙️</button>
+      <h3 id="voiceStatus" style="margin-top: 20px; color: #475569;">Click to Start Speaking</h3>
+      
+      <input type="text" id="aiInput" readonly style="width: 90%; padding: 12px; margin-top: 15px; border: 1px solid #cbd5e1; border-radius: 6px; text-align: center; font-size: 16px; background-color: #fff;" placeholder="Your spoken text will appear here...">
+      <p id="aiFeedback" style="margin-top: 15px; font-weight: bold; font-size: 15px;"></p>
+    </div>
+
+    <form action="book_process.php" method="post" id="hiddenBookingForm" style="display: none;">
+      <input type="text" name="departure_station" id="fromStation">
+      <input type="text" name="arrival_station" id="toStation">
+      <input type="date" name="travel_date" id="travelDate">
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+  </div>
+
+  <script src="book_voice.js"></script>
+  <footer>© 2nd-2025-26 / IMSIU / CCIS ™</footer>
+</body>
+</html>

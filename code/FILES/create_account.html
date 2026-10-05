@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="43200">
+  <title>SAR - Create Account</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div>EMAIL: customercare@sar.com.sa | TEL: 8001262000</div>
+    <div>
+      <a href="https://x.com/SARSaudiRailway" target="_blank">X</a>
+      <a href="https://instagram.com/SARSaudiRailway" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logos">
+      <img src="ccis.png" alt="CCIS">
+      <img src="imsiu.png" alt="IMSIU">
+    </div>
+    <div class="site-title">Saudi Arabia Railways (SAR)</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="travel.html">Travel with SAR</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create_account.html" class="active">Create Account</a></li>
+      <li><a href="sign.html">Sign In</a></li>
+      <li><a href="booking_choice.html">Book a Ticket</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <br><br>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Create Account</h1>
+    <form action="register_process.php" method="post" id="registerForm">
+      <label>Full Name</label>
+      <input type="text" name="name" required pattern="[A-Za-z\s]{3,50}" title="Letters only, 3-50 chars">
+
+      <label>ID</label>
+      <input type="text" name="id" required pattern="[0-9]{10}" title="10 digits">
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required>
+
+      <label>Nationality</label>
+      <input type="text" name="nationality" required>
+
+      <label>Mobile Number</label>
+      <input type="tel" name="mobile" required pattern="05[0-9]{8}" title="e.g. 05xxxxxxxx">
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Password</label>
+      <input type="password" id="password" name="password" required minlength="8" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="Password must contain at least 1 number, 1 uppercase letter, and be at least 8 characters long.">
+
+      <label>Confirm Password</label>
+      <input type="password" id="confirm_password" name="confirm_password" required minlength="8" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="Should match the password above">
+      <br><br>
+      <label>Security Check:</label>
+      <div>
+        <span id="captchaDisplay" class="captcha-box"></span>
+        <button type="button" id="refreshCaptcha">🔄 Refresh</button>
+      </div>
+        <br>
+
+      <label for="captchaInput">Type the characters you see above :</label>
+      <input type="text" id="captchaInput" required autocomplete="off">
+      <br><br>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <script src="register.js"></script>
+    
+  </div>
+
+  <footer>© 2nd-2025-26 / IMSIU / CCIS ™</footer>
+</body>
+
+</html>

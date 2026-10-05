@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="43200">
+  <title>SAR - Book a Ticket</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div>EMAIL : customercare@sar.com.sa | TEL: 8001262000</div>
+    <div>
+      <a href="https://x.com/SARSaudiRailway" target="_blank">X</a>
+      <a href="https://instagram.com/SARSaudiRailway" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logos">
+      <img src="ccis.png" alt="CCIS">
+      <img src="imsiu.png" alt="IMSIU">
+    </div>
+    <div class="site-title">Saudi Arabia Railways (SAR)</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="travel.html">Travel with SAR</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create_account.html">Create Account</a></li>
+      <li><a href="sign.html">Sign In</a></li>
+      <li><a href="booking_choice.html">Book a Ticket</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <br><br>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Book a Ticket</h1>
+    <form action="" method="post" id="bookingForm">
+      <div>
+        <label><input type="radio" name="trip" value="one" checked> One Way Trip</label>
+        <label><input type="radio" name="trip" value="round"> Round Trip</label>
+        <label><input type="radio" name="trip" value="multi"> Multi Route</label>
+        <br><br>
+      </div>
+      
+      <div class="booking-row">
+        <div>
+          <label>From</label>
+          <select name="from" required>
+            <option value="">Select Departure</option>
+            <option>Riyadh</option>
+            <option>Makkah</option>
+            <option>Madinah</option>
+            <option>Dammam</option>
+            <option>Jeddah</option>
+          </select>
+        </div>
+        <div>
+          <label>To</label>
+          <select name="to" required>
+            <option value="">Select Arrival</option>
+            <option>Riyadh</option>
+            <option>Makkah</option>
+            <option>Madinah</option>
+            <option>Dammam</option>
+            <option>Jeddah</option>
+          </select>
+        </div>
+        <div>
+          <label>Departure Date</label>
+          <input type="date" id="departure_date" name="date" required>
+        </div>
+        <div>
+          <label>Travelers</label>
+          <select name="travelers" id="traveler_select" required>
+            <option value="1">1 Traveler</option>
+            <option value="2">2 Travelers</option>
+            <option value="3">3 Travelers</option>
+            <option value="4">4 Travelers</option>
+            <option value="12">12 Travelers (Group)</option>
+            <option value="15">15 Travelers (Group)</option>
+          </select>
+          <br><br><br>
+          <label style="float:right;"><input type="checkbox" id="group_checkbox" name="group"><br>Coupon Booking <br>(More than 10 passengers)</label>
+        </div>
+      </div>
+      
+      <p style="text-align:right;margin-top:15px;">
+        <a href="https://sar.hhr.sa/timetable">📅 Haramain Train Time Table</a>
+      </p>
+      
+      <button type="submit" style="float:right;">Search</button>
+      <div style="clear:both;"></div>
+    </form>
+    
+    <script src="booking.js"></script>
+  </div>
+  
+  <footer>© 2nd-2025-26 / IMSIU / CCIS ™</footer>
+
+</body>
+
+</html>
