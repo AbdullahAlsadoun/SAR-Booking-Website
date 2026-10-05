@@ -54,3 +54,14 @@
   <img src="designs/manual_booking.png" alt="Manual Booking Form" width="800"/>
   <br><em>Structured Reservation Form with Route Control</em>
 </p>
+
+##  Tech Stack
+* **Front-End:** HTML5, CSS3, JavaScript, Web Speech API
+* **Back-End:** PHP
+* **Database:** MySQL
+* **Security:** Bot Protection (CAPTCHA), Input Sanitization, Session Authentication
+
+
+
+##  Deliverables & Documents
+* **Presentation & Pitch Deck:** [View SAR Presentation PDF](docs/SAR%20Booking%20Website.pdf)
